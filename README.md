@@ -1,5 +1,5 @@
 # IoT
-### 12.9.2022 (otsikko)
+### 12.9.2022 projekti suunitelma
 
 #### (otsikko)
 ##### (otsikko)

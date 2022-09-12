@@ -8,10 +8,6 @@ Kuva
 # Ryhmätyö 
 ## 12.9.2022
 #### ryhmä: Sisu,Joona(minä)
-
-
-
-
-
-
-
+Asennin Rasberry pin kun sisu samalla ohjeisti etä miten ladattiin
+sen jälkeen tietokanta palvelin,php,apache ja mariaDB
+ja sitten sen jälkeen chromium kuoli ja piti ladata siinä samalla firefox ja sitten siitä samalla filezilla

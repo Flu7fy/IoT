@@ -1,6 +1,10 @@
 # IoT
 ### 12.9.2022 projekti suunitelma
+![image](https://user-images.githubusercontent.com/113332670/189598594-9897606b-a162-49f6-874a-9b8158e528d8.png)
+kuva
 
-#### (otsikko)![image](https://user-images.githubusercontent.com/113332670/189598403-672a1cbc-5805-4826-91ef-6299925aa64a.png)
+![image](https://user-images.githubusercontent.com/113332670/189598675-5c21c430-396f-4bc1-8901-82f37b86ec59.png)
+
+#### (otsikko)
 
 ##### (otsikko)

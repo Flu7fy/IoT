@@ -22,7 +22,7 @@ ryhmä: Vilma, Sisu, Joona
  CREATE DATABASE joona_gamestop;
 //tietokannan luominen
  USE joona_gamestop
- //tietokanna käyttöön ottaminen
+ //tietokannan käyttöön ottaminen
 CREATE TABLE Joona_liike(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo int, bool boolean, aika datetime);
 SELECT * FROM liike;
 INSERT INTO joona_liike (arvo, aika) VALUES (true, now());

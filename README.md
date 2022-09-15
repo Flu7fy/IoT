@@ -7,7 +7,18 @@
 Kuva
 # Ryhmätyö 
 ## 12.9.2022
-#### ryhmä: Sisu,Joona(minä)
-Asennin Rasberry pin kun sisu samalla ohjeisti etä miten ladattiin
-sen jälkeen tietokanta palvelin,php,apache ja mariaDB
-ja sitten sen jälkeen chromium kuoli ja piti ladata siinä samalla firefox ja sitten siitä samalla filezilla
+#### ryhmä: Vilma(poissa),Sisu,Joona(minä)
+- Asennettiin Rasberry pi käyttöjärjestelmä, tietokanta palvelin, php, apache ja mariaDB
+
+- chromium kuoli ja piti ladata firefox että olisi jokin browser sovellus joka toimisi
+
+
+## 15.9.2022 tietokanta
+### 
+ryhmä: Vilma, Sisu, Joona
+ -Luotiiin tietokanta MariaDB palvelimella tietokanta Gamestop
+ `CREATE DATABASE gamestop;
+ USE gamestop
+CREATE TABLE liike(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo int, bool boolean, aika datetime);
+SELECT * FROM liike;
+INSERT INTO liike (bool, aika) VALUES (true, now());`

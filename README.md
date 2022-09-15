@@ -17,6 +17,7 @@ Kuva
 ### 
 ryhmä: Vilma, Sisu, Joona
  -Luotiiin tietokanta MariaDB palvelimella tietokanta Gamestop
+ 
  `CREATE DATABASE gamestop;
  USE gamestop
 CREATE TABLE liike(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo int, bool boolean, aika datetime);

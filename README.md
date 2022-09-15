@@ -18,9 +18,10 @@ Kuva
 ryhmä: Vilma, Sisu, Joona
  -Luotiiin tietokanta MariaDB palvelimella tietokanta joona_gamestop
  -käytettiin SQL koodi kieltä
- 
+ ```
  `CREATE DATABASE joona_gamestop;
  USE joona_gamestop
 CREATE TABLE Joona_liike(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo int, bool boolean, aika datetime);
 SELECT * FROM liike;
 INSERT INTO joona_liike (arvo, aika) VALUES (true, now());`
+```

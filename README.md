@@ -45,9 +45,12 @@ try:
     while True:
     //"kun on totta" niin pyörittää tätä koodia niin pitkään kun se on false
         t = time.localtime()
+    //paikallinen aika
         aika = time.strftime("%H:%M:%S", t)
+        /pistää kellon ajan tunnit, minuutit ja sekunnit
         if GPIO.input(7):
             print(aika, ": Liikettä")
+            laittaa kellon ajan ja tekstin
             time.sleep(2)
             // tarkoittaa kuinka pitkää nukkuu kunnes pyörittää seuraavan koodin uudestaa
         else:
@@ -57,6 +60,6 @@ try:
         
 
 except:
-// jos ei toimi niin pyörittää seuraavan koodin niin pitkään kunnes linja 37 toimii
+// jos ei toimi niin pyörittää seuraavan koodin niin pitkään kunnes linja 43 toimii
     GPIO.cleanup()
 ```

@@ -31,10 +31,15 @@ INSERT INTO joona_liike (arvo, aika) VALUES (true, now());
 ### Ryhmä: Vilma, Sisu, Joona
 ```
 import time
+// pistää kirjaston jossa on koodia aikaa liittyen
 while true:
+//"kun on totta" niin pyörittää tätä koodia niin pitkään kun se on false
     try:
+//kokeilee tätä koodia ensmmäisenä jos toimisi
        time.sleep(5)
+// tarkoittaa kuinka pitkää nukkuu kunnes pyörittää seuraavan koodin uudestaa
        print("toimii")
     execpt:
+// jos ei toimi niin pyörittää seuraavan koodin niin pitkään kunnes linja 37 toimii
         print("Ei toimi...")
 ```

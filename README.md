@@ -27,7 +27,8 @@ SELECT * FROM liike;
 INSERT INTO joona_liike (arvo, aika) VALUES (true, now());
 ```
 
-## 19.9.2022 datan siirtäminen tietokantaan rasberrypi:n kautta
+## 19.9.2022
+## datan siirtäminen tietokantaan rasberrypi:n kautta
 ### Ryhmä: Vilma, Sisu, Joona
 
 koodi  liike anturille

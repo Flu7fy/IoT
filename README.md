@@ -35,24 +35,24 @@ koodi  liike anturille
 ```
 import RPi.GPIO as GPIO
 import time
-// pistää kirjaston jossa on koodia aikaa liittyen
+#pistää kirjaston jossa on koodia aikaa liittyen
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(7, GPIO.IN)
-
+#asettaa liikeanturin
 try:
-//kokeilee tätä koodia ensmmäisenä jos toimisi
+#kokeilee tätä koodia ensmmäisenä jos toimisi
     while True:
-    //"kun on totta" niin pyörittää tätä koodia niin pitkään kun se on false
+    #"kun on totta" niin pyörittää tätä koodia niin pitkään kun se on false
         t = time.localtime()
-    //paikallinen aika
+    #paikallinen aika
         aika = time.strftime("%H:%M:%S", t)
         /pistää kellon ajan tunnit, minuutit ja sekunnit
         if GPIO.input(7):
             print(aika, ": Liikettä")
             laittaa kellon ajan ja tekstin
             time.sleep(2)
-            // tarkoittaa kuinka pitkää nukkuu kunnes pyörittää seuraavan koodin uudestaa
+            #tarkoittaa kuinka pitkää nukkuu kunnes pyörittää seuraavan koodin uudestaa
         else:
             print(aika, ": Ei liikettä")
             time.sleep(2)
@@ -60,6 +60,42 @@ try:
         
 
 except:
-// jos ei toimi niin pyörittää seuraavan koodin niin pitkään kunnes linja 43 toimii
+#jos ei toimi niin pyörittää seuraavan koodin niin pitkään kunnes linja 43 toimii
     GPIO.cleanup()
 ```
+
+
+
+WIP
+ ```
+#tuo kirjastot 
+import RPi.GPIO as GPIO
+import mariadb
+import time
+
+#Asetetaan liikeanturi
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(7, GPIO.IN)
+
+# asetetaan muuttuja jonka tunnuksilla ohjelma löytää ja pääsee tietokantaan käsikisi
+conn = mariadb.connect(user="root", password = "[salasana]", host = "localhost", database = "[tietokannan_nimi]")
+cur = conn.cursor()
+
+
+try:
+    while True:
+        #jos huomaa liikettä tallenna taulukkoon Arvo 1
+        if GPIO.input(7):
+            cur.execute("INSERT INTO liike(arvo, aika) VALUES (1, now())")
+            conn.commit()
+            time.sleep(5)
+        #jos anturi ei huomaa liikettä tallenna taulukkoon Arvo 0
+        else:
+            cur.execute("INSERT INTO liike(arvo, aika) VALUES (0, now())")
+            time.sleep(5)
+
+#jos ei toimi tulosta virhe
+except:
+    print("Error")
+    GPIO.cleanup()
+    ```

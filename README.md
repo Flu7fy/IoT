@@ -29,6 +29,8 @@ INSERT INTO joona_liike (arvo, aika) VALUES (true, now());
 
 ## 19.9.2022 datan siirtäminen tietokantaan rasberrypi:n kautta
 ### Ryhmä: Vilma, Sisu, Joona
+
+koodi  liike anturille
 ```
 import time
 // pistää kirjaston jossa on koodia aikaa liittyen

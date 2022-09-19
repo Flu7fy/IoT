@@ -14,8 +14,7 @@ Kuva
 
 
 ## 15.9.2022 tietokanta 
-### 
-ryhmä: Vilma, Sisu, Joona
+### ryhmä: Vilma, Sisu, Joona
  - Luotiiin tietokanta MariaDB palvelimella tietokanta joona_gamestop
  - käytettiin SQL koodi kieltä
  ```
@@ -26,4 +25,16 @@ ryhmä: Vilma, Sisu, Joona
 CREATE TABLE Joona_liike(id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo int, bool boolean, aika datetime);
 SELECT * FROM liike;
 INSERT INTO joona_liike (arvo, aika) VALUES (true, now());
+```
+
+## 19.9.2022 datan siirtäminen tietokantaan rasberrypi:n kautta
+### Ryhmä: Vilma, Sisu, Joona
+```
+import time
+while true:
+    try:
+       time.sleep(5)
+       print("toimii")
+    execpt:
+        print("Ei toimi...")
 ```

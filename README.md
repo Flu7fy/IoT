@@ -99,3 +99,11 @@ except:
     print("Error")
     GPIO.cleanup()
   
+
+t.1
+A)EEPROM on muistimoduuli circuit moduulissa. tämä löytyy arduinosta
+b)UART se on lyhenne sanoista: Universal asynchronous receiver and transmission tarkoittaa sarjaliikenne protokollaa, joka tapahtuu kahdella linjalla tai digitaalisella nastalla ,jotka ovat RX (nasta0) ja TX (nasta1)
+Arduino sisältää USB-sarjamuuntimen, joka avulla mikro-ohjain alijärjestelmä voi olla suoraan yhteydessä tietoko neeseen (esim raspberry PI:hin)
+C)I2C on yksinkertainen kaksisuuntainen ohjaus- ja tiedonsiirtoväylä jonka normaali käyttö on näytön liitinnän kyky  kertoa nimensä ja tarkkuutensa tietokoneille
+B)SIP on IP-puhelinyhteyksien luonnista vastaava tietoliikenneprotokolla. jolla voidaan muodostaa puhelinyhteyksiä
+D)SIP on nopeampi kuin I2C

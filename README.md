@@ -5,6 +5,7 @@
 
 ![image](https://user-images.githubusercontent.com/113332670/189598675-5c21c430-396f-4bc1-8901-82f37b86ec59.png)
 Kuva
+
 # Ryhmätyö 
 ## 12.9.2022
 #### ryhmä: Vilma(poissa),Sisu,Joona(minä)

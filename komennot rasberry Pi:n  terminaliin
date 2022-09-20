@@ -1,0 +1,46 @@
+rasberry PIn komennot terminaliin
+```
+apt-get update
+clear
+date
+find/ - name esimerkki.txt
+nano example.txt
+poweroff
+raspi-config
+reboot
+shutdown -h now
+shutdown -h 01:22:
+startx
+cat esimerkki.txt
+cd/abc//xyz
+is -l
+mkdir esimerki:_polku
+mv XXX
+rm esimerkki.tct
+scp user@ 10.0.0.32:/some/path/tiedosto.txt
+touch example.txt
+ifconfig
+iwconfig
+iwlist wlan0 scan
+iwlist wlan0  grep ESSID
+nmap
+ping
+wget http://website.com/example.txt
+cat /proc/meminfo
+cat /proc/partions
+cat /proc/version
+df -h
+df /
+dpkg - -get-selections grep XXX
+dpkg- -get-selections
+free
+hostname -I
+Isusb
+UP key
+vcgencmd measure_tmp
+vcgencmd get_mem arm && vcgencmd get_mem gpu
+```
+
+t.1 vcgencmd measure_tmp
+t.2 df -h
+t.3 cd/abc/xyz

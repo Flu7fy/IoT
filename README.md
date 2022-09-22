@@ -67,7 +67,7 @@ except:
 
 
 
-WIP
+
  ```
 #tuo kirjastot 
 import RPi.GPIO as GPIO
@@ -99,6 +99,7 @@ try:
 except:
     print("Error")
     GPIO.cleanup()
+    ```
   
 
 t.1
@@ -108,3 +109,47 @@ Arduino sisältää USB-sarjamuuntimen, joka avulla mikro-ohjain alijärjestelm�
 C)I2C on yksinkertainen kaksisuuntainen ohjaus- ja tiedonsiirtoväylä jonka normaali käyttö on näytön liitinnän kyky  kertoa nimensä ja tarkkuutensa tietokoneille
 B)SIP on IP-puhelinyhteyksien luonnista vastaava tietoliikenneprotokolla. jolla voidaan muodostaa puhelinyhteyksiä
 D)SIP on nopeampi kuin I2C
+
+
+##22.9.2022 python- tietokantatesti
+### ryhmä: vilma,joona ja sisu
+
+
+1.
+a)SHOW DATABASES;
+B)DESCRIBE joona_liike;
+2.
+```
+#tuo kirjastot
+import RPi.GPIO as GPIO
+import mariadb
+import time
+
+#asetetaan muuttujat
+salasana = "hyvasalasana"
+tietokanta = "Joona_gamestop"
+odotus_aika = 5
+
+#GPIO setuppi
+GPIO_input = 7
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(GPIO_input, GPIO.IN)
+
+#Tiekokannan tunnukset
+conn = mariadb.connect(user="root", password = salasana, host = "localhost", database = tietokanta)
+cur = conn.cursor()
+
+try:
+    while True:
+        #arvo on anturin tulos 
+        arvo = GPIO.setup(GPIO_input, GPIO.IN)
+        #mysql stirng on komento joka tallentaa tiedon tietokantaan
+        mysqlstr = f"INSERT INTO liike(arvo, aika) VALUES (arvo, now())"
+        cur.execute(mysqlstr)
+        conn.commit()
+        #odota määritetty aika
+        time.sleep(odotus_aika)
+#virhe ilmoittaa virheen
+except:
+    print("Error")
+    GPIO.cleanup()

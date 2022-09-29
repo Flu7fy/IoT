@@ -156,6 +156,9 @@ except:
     GPIO.cleanup()
     
 ```
+# 22.9.2022
+## php ja html koodaamista jotta saadaan sivusto tehtyä
+### ryhmä: Vilma, Joona, Sisu
 ```
 <!DOCTYPE html>
 <html>

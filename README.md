@@ -120,6 +120,7 @@ a)SHOW DATABASES;
 B)DESCRIBE joona_liike;
 2.
 ```
+```
 #tuo kirjastot
 import RPi.GPIO as GPIO
 import mariadb
@@ -153,3 +154,4 @@ try:
 except:
     print("Error")
     GPIO.cleanup()
+    ```

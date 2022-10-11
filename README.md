@@ -211,3 +211,4 @@ except:
     </body>
 </html>
 ```
+CREATE TABLE Keskustelu (id int primary key auto_increment, nimi varchar(50),viesti varchar(1000))

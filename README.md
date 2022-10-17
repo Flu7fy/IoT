@@ -216,7 +216,7 @@ except:
 
 CREATE TABLE Keskustelu (id int primary key auto_increment, nimi varchar(50),viesti varchar(1000))
 -tehtiin tietokanta keskustelupalstalle
-
+``
 <!DOCTYPE html>
 <html>
     <head>
@@ -255,3 +255,4 @@ CREATE TABLE Keskustelu (id int primary key auto_increment, nimi varchar(50),vie
         </div> 
     </body>
 </html>
+``

@@ -79,7 +79,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(7, GPIO.IN)
 
 # asetetaan muuttuja jonka tunnuksilla ohjelma löytää ja pääsee tietokantaan käsikisi
-conn = mariadb.connect(user="root", password = "[salasana]", host = "localhost", database = "[tietokannan_nimi]")
+conn = mariadb.connect(user="nimi", password = "[salasana]", host = "localhost", database = "[tietokannan_nimi]")
 cur = conn.cursor()
 
 
@@ -127,8 +127,8 @@ import mariadb
 import time
 
 #asetetaan muuttujat
-salasana = "hyvasalasana"
-tietokanta = "Joona_gamestop"
+salasana = "salasana"
+tietokanta = "nimi"
 odotus_aika = 5
 
 #GPIO setuppi
@@ -168,10 +168,10 @@ except:
     <body style="background-color: aquamarine;">
         <?php
 
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname ="joona_gamestop";
+        $servername = "servername";
+        $username = "username";
+        $password = "salasana";
+        $dbname ="nimi";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
         if ($conn->connect_error){
@@ -211,7 +211,11 @@ except:
     </body>
 </html>
 ```
+*** 11.10.2022
+** Keskustelupalstan tekemistä
+
 CREATE TABLE Keskustelu (id int primary key auto_increment, nimi varchar(50),viesti varchar(1000))
+-tehtiin tietokanta keskustelupalstalle
 
 <!DOCTYPE html>
 <html>
@@ -221,10 +225,10 @@ CREATE TABLE Keskustelu (id int primary key auto_increment, nimi varchar(50),vie
     <body style="background-color: aquamarine;">
         <?php
 
-        $servername = "hyvis.mysql.database.azure.com";
-        $username = "db_projekti";
-        $password = "Sivyh2022";
-        $dbname ="joona_db";
+        $servername = "servername";
+        $username = "username";
+        $password = "Salasana";
+        $dbname ="nimi";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
         if ($conn->connect_error){
